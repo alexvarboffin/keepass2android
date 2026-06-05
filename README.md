@@ -4,6 +4,11 @@ Fork of [Keepass2Android](https://github.com/PhilippC/keepass2android) with a sm
 
 Upstream docs: [docs/README.md](docs/README.md)
 
+## Download APK
+
+Pre-built **Net** release: [v1.15-r2-share](https://github.com/alexvarboffin/keepass2android/releases/tag/v1.15-r2-share)  
+Asset: `keepass2android-1.15-r2-share-net.apk`
+
 ## Changes in this fork
 
 ### Share field text (system share sheet)
