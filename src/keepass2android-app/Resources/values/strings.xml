@@ -99,6 +99,7 @@
   <string name="disclaimer_formal">Keepass2Android comes with ABSOLUTELY NO WARRANTY; This is free software, and you are welcome to redistribute it under the conditions of the GPL version 2 or later.</string>
   <string name="ellipsis">\u2026</string>
   <string name="copy_to_clipboard">Copy to clipboard</string>
+  <string name="share_text">Share</string>
   <string name="SystemLanguage">System language</string>
   <string name="fingerprint_description">Please authenticate to continue</string>
   <string name="fingerprint_fatal">Cannot setup Biometric Unlock:</string>

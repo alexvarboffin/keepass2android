@@ -5,7 +5,7 @@ android {
     namespace 'keepass2android.kp2akeytransform'
 
     // Explicit NDK version used for ndk-build
-    ndkVersion "28.2.13676358"
+    ndkVersion "27.0.12077973"
 
     compileSdk 34
 
