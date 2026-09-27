@@ -1,13 +1,13 @@
 # Keepass2Android (fork)
 
-Fork of [Keepass2Android](https://github.com/PhilippC/keepass2android) with a small UX addition for sharing field values to other Android apps.
+Fork of [Keepass2Android](https://github.com/PhilippC/keepass2android) with field actions to share a value or type it through a Bluetooth HID keyboard.
 
 Upstream docs: [docs/README.md](docs/README.md)
 
 ## Download APK
 
-Pre-built **Net** release: [v1.15-r2-share](https://github.com/alexvarboffin/keepass2android/releases/tag/v1.15-r2-share)  
-Asset: `keepass2android-1.15-r2-share-net.apk`
+Pre-built **Net** release: [v1.15-r2-hid](https://github.com/alexvarboffin/keepass2android/releases/tag/v1.15-r2-hid)  
+Asset: `keepass2android-1.15-r2-hid-net.apk`
 
 ## Changes in this fork
 
@@ -22,6 +22,19 @@ When viewing a password entry, each field popup menu (⋮) now includes **Share*
 Implementation:
 
 - `src/keepass2android-app/EntryActivityClasses/ShareTextPopupMenuItem.cs`
+- wired in `EntryActivity.RegisterTextPopup()`
+
+### Type via HID
+
+The same field popup also includes **Type via HID** / **Ввести через HID**.
+
+- Sends the current field value to the Bluetooth HID keyboard app (`com.walhalla.bluetoothhiddevice`, `HidTextService`)
+- That app types the value on the connected computer when a HID session is already active
+- Shows a toast if the HID app is not installed or its service cannot be started
+
+Implementation:
+
+- `src/keepass2android-app/EntryActivityClasses/SendToHidPopupMenuItem.cs`
 - wired in `EntryActivity.RegisterTextPopup()`
 
 ### Build fixes for local Windows / `adb install`

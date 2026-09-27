@@ -99,6 +99,8 @@
   <string name="ellipsis">\u2026</string>
   <string name="copy_to_clipboard">Скопировать в буфер</string>
   <string name="share_text">Поделиться</string>
+  <string name="send_to_hid">Ввести через HID</string>
+  <string name="send_to_hid_unavailable">Приложение Bluetooth HID недоступно</string>
   <string name="SystemLanguage">Системный</string>
   <string name="fingerprint_description">Для продолжения требуется аутентификация</string>
   <string name="fingerprint_fatal">Не удалось настроить разблокирование при помощи биометрии:</string>

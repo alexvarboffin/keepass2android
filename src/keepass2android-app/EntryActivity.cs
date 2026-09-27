@@ -1159,6 +1159,7 @@ namespace keepass2android
           anchor);
       popupItems.Add(new CopyToClipboardPopupMenuIcon(this, _stringViews[fieldKey], isProtected));
       popupItems.Add(new ShareTextPopupMenuItem(this, _stringViews[fieldKey]));
+      popupItems.Add(new SendToHidPopupMenuItem(this, _stringViews[fieldKey]));
       if (isProtected)
       {
         var valueView = container.FindViewById<TextView>(fieldKey switch

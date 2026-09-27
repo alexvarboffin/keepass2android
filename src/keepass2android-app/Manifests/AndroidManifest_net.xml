@@ -31,6 +31,7 @@
     <package android:name="it.andreacioni.kp2a.plugin.keelink" />
     <package android:name="com.inputstick.apps.kp2aplugin" />
     <package android:name="com.dropbox.android" />
+    <package android:name="com.walhalla.bluetoothhiddevice" />
 
     <intent>
       <action android:name="android.intent.action.OPEN_DOCUMENT" />
